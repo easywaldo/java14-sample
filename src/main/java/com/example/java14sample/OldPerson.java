@@ -2,7 +2,7 @@ package com.example.java14sample;
 
 import java.util.Objects;
 
-public class Person {
+public class OldPerson {
     private final String name;
     public String getName() {
         return this.name;
@@ -12,8 +12,8 @@ public class Person {
         return this.address;
     }
 
-    public Person(String name,
-                  String address) {
+    public OldPerson(String name,
+                     String address) {
         this.name = name;
         this.address = address;
     }
@@ -28,11 +28,11 @@ public class Person {
         if (this == obj) {
             return true;
         }
-        else if (!(obj instanceof Person)) {
+        else if (!(obj instanceof OldPerson)) {
             return false;
         }
         else {
-            Person other = (Person) obj;
+            OldPerson other = (OldPerson) obj;
             return Objects.equals(name, other.name) && Objects.equals(address, other.address);
         }
     }

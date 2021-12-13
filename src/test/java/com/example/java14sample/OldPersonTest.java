@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class PersonTest {
+class OldPersonTest {
     public record Person (String name, String address) {}
 
     @Test
